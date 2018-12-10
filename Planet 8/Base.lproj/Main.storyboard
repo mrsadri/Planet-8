@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +13,79 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Planet_8" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="e0a-bZ-Y8f">
+                                <rect key="frame" x="27" y="61" width="332" height="606"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="1GI-gM-yel">
+                                        <rect key="frame" x="0.0" y="28" width="332" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="1GI-gM-yel" id="pjy-Gl-MCQ">
+                                            <rect key="frame" x="0.0" y="0.0" width="332" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellButton" rowHeight="74" id="5cL-g5-cc1" customClass="MainTableQuestionCell" customModule="Planet_8" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="72" width="332" height="74"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="5cL-g5-cc1" id="vLb-fi-Fox">
+                                            <rect key="frame" x="0.0" y="0.0" width="332" height="73.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qiy-eu-CLH">
+                                                    <rect key="frame" x="239" y="21" width="30" height="30"/>
+                                                    <state key="normal" title="Yes"/>
+                                                    <connections>
+                                                        <action selector="yesButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ilj-ky-5fJ"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YcT-Aj-auX">
+                                                    <rect key="frame" x="57" y="21" width="30" height="30"/>
+                                                    <state key="normal" title="No"/>
+                                                    <connections>
+                                                        <action selector="noButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ib6-2j-ueL"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailingMargin" secondItem="qiy-eu-CLH" secondAttribute="trailing" constant="47" id="2k4-ru-Q0B"/>
+                                                <constraint firstItem="qiy-eu-CLH" firstAttribute="baseline" secondItem="YcT-Aj-auX" secondAttribute="firstBaseline" id="3Is-r1-Fk7"/>
+                                                <constraint firstItem="YcT-Aj-auX" firstAttribute="top" secondItem="qiy-eu-CLH" secondAttribute="top" id="C0W-7O-C6A"/>
+                                                <constraint firstItem="YcT-Aj-auX" firstAttribute="centerY" secondItem="vLb-fi-Fox" secondAttribute="centerY" id="RZF-hG-It8"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="YcT-Aj-auX" secondAttribute="bottom" constant="12" id="ari-gH-GIL"/>
+                                                <constraint firstItem="YcT-Aj-auX" firstAttribute="baseline" secondItem="qiy-eu-CLH" secondAttribute="firstBaseline" id="m1K-fA-YQZ"/>
+                                                <constraint firstItem="YcT-Aj-auX" firstAttribute="leading" secondItem="vLb-fi-Fox" secondAttribute="leadingMargin" constant="41" id="nBL-dI-ex7"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="noButtonM" destination="YcT-Aj-auX" id="RBF-mO-tNV"/>
+                                            <outlet property="yesButtonM" destination="qiy-eu-CLH" id="PzI-Sf-pKJ"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="e0a-bZ-Y8f" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="27" id="KAz-z6-46Y"/>
+                            <constraint firstItem="e0a-bZ-Y8f" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="T6z-u7-Fbb"/>
+                            <constraint firstItem="e0a-bZ-Y8f" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="41" id="m4e-s5-exm"/>
+                            <constraint firstItem="e0a-bZ-Y8f" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="qgJ-Hi-0SC"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="mainTableView" destination="e0a-bZ-Y8f" id="dEf-af-0F3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
         </scene>
     </scenes>
 </document>

@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE3E622B21B67BAE004F9807 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3E622A21B67BAE004F9807 /* DataModel.swift */; };
+		CE3E622D21B67C63004F9807 /* DataInterperter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3E622C21B67C63004F9807 /* DataInterperter.swift */; };
+		CE3E622F21B69A19004F9807 /* MainTableQuestionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3E622E21B69A19004F9807 /* MainTableQuestionCell.swift */; };
+		CE3E623121B6AF55004F9807 /* StoryDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3E623021B6AF55004F9807 /* StoryDataProvider.swift */; };
 		CEF2A90E21B03071004FCFCD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF2A90D21B03071004FCFCD /* AppDelegate.swift */; };
 		CEF2A91021B03071004FCFCD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF2A90F21B03071004FCFCD /* ViewController.swift */; };
 		CEF2A91321B03071004FCFCD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEF2A91121B03071004FCFCD /* Main.storyboard */; };
@@ -15,6 +19,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CE3E622A21B67BAE004F9807 /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
+		CE3E622C21B67C63004F9807 /* DataInterperter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataInterperter.swift; sourceTree = "<group>"; };
+		CE3E622E21B69A19004F9807 /* MainTableQuestionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableQuestionCell.swift; sourceTree = "<group>"; };
+		CE3E623021B6AF55004F9807 /* StoryDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryDataProvider.swift; sourceTree = "<group>"; };
 		CEF2A90A21B03071004FCFCD /* Planet 8.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Planet 8.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEF2A90D21B03071004FCFCD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CEF2A90F21B03071004FCFCD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -56,6 +64,10 @@
 			children = (
 				CEF2A90D21B03071004FCFCD /* AppDelegate.swift */,
 				CEF2A90F21B03071004FCFCD /* ViewController.swift */,
+				CE3E623021B6AF55004F9807 /* StoryDataProvider.swift */,
+				CE3E622E21B69A19004F9807 /* MainTableQuestionCell.swift */,
+				CE3E622A21B67BAE004F9807 /* DataModel.swift */,
+				CE3E622C21B67C63004F9807 /* DataInterperter.swift */,
 				CEF2A91121B03071004FCFCD /* Main.storyboard */,
 				CEF2A91421B03072004FCFCD /* Assets.xcassets */,
 				CEF2A91621B03072004FCFCD /* LaunchScreen.storyboard */,
@@ -136,7 +148,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				CEF2A91021B03071004FCFCD /* ViewController.swift in Sources */,
+				CE3E622F21B69A19004F9807 /* MainTableQuestionCell.swift in Sources */,
 				CEF2A90E21B03071004FCFCD /* AppDelegate.swift in Sources */,
+				CE3E623121B6AF55004F9807 /* StoryDataProvider.swift in Sources */,
+				CE3E622D21B67C63004F9807 /* DataInterperter.swift in Sources */,
+				CE3E622B21B67BAE004F9807 /* DataModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
